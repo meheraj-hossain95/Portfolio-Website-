@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Cabin:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Optima, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #fff; 
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background-color: rgb(5, 26, 42);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.meheraz {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-family: 'Quicksand', 'Cabin', sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(0, 204, 255);
+    border-bottom: 3px solid rgb(0, 204, 255);
+}
+
+.about-section {
+    text-align: center;
+    padding: 6rem 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #f9f9f9;
+}
+
+.about-section span {
+    color:   rgb(0, 204, 255);
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-card {
+    display: flex;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+}
+
+.about-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    margin-right: 2rem;
+    border: 5px solid rgb(0, 204, 255);;
+    box-shadow: 1px 1px 10px rgb(0, 204, 255);
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(0, 204, 255);
+}
+
+.about-content p {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .about-image img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+}

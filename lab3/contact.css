@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Cabin:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Optima, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff; 
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background-color: rgb(5, 26, 42);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.meheraz {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-family: 'Quicksand', 'Cabin', sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(0, 204, 255);
+    border-bottom: 3px solid rgb(0, 204, 255);
+}
+
+.contact-section {
+    text-align: center;
+    padding: 6rem 1rem 2rem;
+    margin-top: 0.5rem;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #f9f9f9;
+}
+.contact-section span {
+    color: rgb(0, 204, 255);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #1c1c1c;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #888;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background-color: #333;
+    box-shadow: 0 0 5px rgb(0, 204, 255);
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(0, 204, 255);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(0, 150, 200);
+}

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Cabin:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Optima, sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: contain;
+    background-size: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    /* margin-right: 0px; */
+    background-color: rgb(5, 26, 42);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.meheraz {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-family: 'Quicksand', 'Cabin', sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(0, 204, 255);
+    border-bottom:  3px solid  rgb(0, 204, 255);;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+.skills h1 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    color: #fff;
+    margin-left: 215px;
+    font-size: 35px;
+}
+.skills span{
+    color: rgb(0, 204, 255);
+}
+
+.skills h2 {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.progress-bar {
+    background: #959595;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background:  #222;
+    float: right;
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -20px;
+    margin-top: -15px;
+}
+
+.html {
+    animation: html 1s linear forwards;
+    background: #ff3d3d;
+}
+
+.c {
+    animation: c 1s linear forwards;
+    background: #cddc39;
+}
+
+.java {
+    animation: java 1s linear forwards;
+    background: #50ffe2;
+}
+
+.python {
+    animation: python 1s linear forwards;
+    background: #6cbdff;
+}
+
+.sql {
+    animation: sql 1s linear forwards;
+    background: #f4ff59;
+}
+
+
+
+.html span {
+    border: 1px solid  #ff3d3d;
+}
+
+.c span {
+    border: 1px solid #cddc39;
+}
+
+.java span {
+    border: 1px solid #50ffe2;
+}
+
+.python span {
+    border: 1px solid #6cbdff;
+}
+
+.sql span {
+    border: 1px solid  #f4ff59;
+}
+
+@keyframes html {
+    100% {
+        width: 76%;
+    }
+}
+
+@keyframes c {
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes java {
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes python {
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes sql {
+    100% {
+        width: 60%;
+    }
+}
